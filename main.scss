@@ -13,11 +13,11 @@ $main_bg: lightgreen;
     .vehicle{
       width: 100%;
       padding: 10px 30px;
-      border: solid 5px $main_color;
-      @media only screen and (min-width: $mobile){
-        width: 50%;
-        float: left;
-      }
+      border: solid 2px $main_color;
+      // @media only screen and (min-width: $mobile){
+      //   width: 50%;
+      //   float: left;
+      // }
     }
   }
 }
