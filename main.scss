@@ -1,0 +1,23 @@
+$mobile: 768px;
+$tablet: 992px;
+$desktop: 1200px;
+$main_color: gray;
+$main_bg: lightgreen;
+
+.body{ margin: 0; padding: 0;}
+.container{
+  h1{
+    color: $main_color;
+  }
+  .panel{
+    .vehicle{
+      width: 100%;
+      padding: 10px 30px;
+      border: solid 5px $main_color;
+      @media only screen and (min-width: $mobile){
+        width: 50%;
+        float: left;
+      }
+    }
+  }
+}
