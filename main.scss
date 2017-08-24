@@ -11,13 +11,18 @@ $main_bg: lightgreen;
   }
   .panel{
     .vehicle{
-      width: 100%;
-      padding: 10px 30px;
+      padding: 0;
       border: solid 2px $main_color;
-      // @media only screen and (min-width: $mobile){
-      //   width: 50%;
-      //   float: left;
-      // }
+       @media only screen and (min-width: $mobile){
+      }
+      h1.make{
+        padding: 10px 20px;
+        text-align: center;
+      }
+    }
+    button.btn {
+      width: 100%;
+      border-radius: 0;
     }
   }
 }
