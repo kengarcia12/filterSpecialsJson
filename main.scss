@@ -19,6 +19,12 @@ $main_bg: lightgreen;
         padding: 10px 20px;
         text-align: center;
       }
+      span.equip{
+        display: none;
+      }
+      p.model, p.trim, p.year{
+        text-align: left;
+      }
     }
     button.btn {
       width: 100%;

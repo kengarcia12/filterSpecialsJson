@@ -12,7 +12,12 @@ $(document).ready(function(){
       var vehicle = "<div class='vehicle col-lg-4 col-md-6 col-sm-12 col-xs-12'>";
           vehicle += "<div class='image'><img src="+ image +" class='img-responsive'></div>";
           vehicle += "<h1 class='make'>" + make + "</h1>";
-          vehicle += '<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Show Details</button>';
+          vehicle += "<span class='equip'>"+ equipment +"</span>";
+          vehicle += "<p class='model'>" + "<b> Model : </b>" + model + "</p>";
+          vehicle += "<p class='trim'>" + "<b> Trim : </b>" + trim + "</p>";
+          vehicle += "<p class='year'>" + "<b> Year : </b>" + year + "</p>";
+          vehicle += "<button class='btn btn-primary' data-toggle='modal' data-target='#myModal'>Show Details</button>";
+          vehicle += "</div>";
 
       $(".panel").append(vehicle);
 
@@ -22,7 +27,6 @@ $(document).ready(function(){
       var vehicle_make  = $(this).siblings().text();
       var vehicle_image = $(this).siblings().html();
 
-
       $('.vehicle_make').append(vehicle_make);
       $('.vehicle_image').append(vehicle_image);
 
@@ -31,6 +35,7 @@ $(document).ready(function(){
       $('.vehicle_make').text('');
       $('.vehicle_image img').detach();
     });
+
   });
 
 });
