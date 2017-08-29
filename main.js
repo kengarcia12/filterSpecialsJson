@@ -38,23 +38,19 @@ $(document).ready(function(){
           $(".panel").append(vehicle);
         }
     }
-
     $("#myInput").on("keyup", function(){
-      var input, filter, vehicle, make;
-      input   = $(this).val();
-      filter  = input.toUpperCase();
-      vehicle = $(".vehicle");
+      var input, filter, vehicle, vehicle_elem, make;
+      input = $(this).val();
+      filter = input.toUpperCase();
+      vehicle_elem = $(".vehicle");
 
-      for(var x = 0; x < vehicle.length; x++){
-        make = vehicle[x];
-        var h1 = $(make).find("h1").text();
-        if(h1.indexOf(filter) > -1){
-          $(make).css("display","");
-        }else{
-          $(make).css("display","none");
-        }
+      for (var i = 0; i < vehicle_elem.length; i++) {
+         vehicle = vehicle_elem[i];
+         make = $(vehicle).find("h1.make").text();
+         make.indexOf(filter) > -1 ? $(vehicle).show() : $(vehicle).hide();
       }
-
     });
+
+
 
 });
