@@ -6,6 +6,14 @@ $main_bg: lightgreen;
 
 .body{ margin: 0; padding: 0;}
 .container{
+  .reset{
+     padding: 0; margin: 0;
+   }
+   .dropdown{
+     width: 100%;
+     height: 48px;
+     border: solid 1px #ccc;
+   }
   #myInput{
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
